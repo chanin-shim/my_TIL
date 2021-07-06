@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width : 150px;
+      height : 350px;
+      border : 1px solid black;
+      background-color: antiquewhite;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float : right
+    }
+    .clearfix::after {
+      /* 보통 clearfix로 클래스명을 지음 */
+      content : "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header class="clearfix">
+    <div class="box left">float left</div>
+  </header>
+  <div class="box left">float left</div>
+  <div class="box right">난 오른쪽이야</div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quasi hic consectetur iste rerum tempore. Quasi repellat quas iure! Molestiae ducimus esse est voluptatum veritatis consequatur provident? Atque, tempore quas.</p>
+</body>
+</html>
